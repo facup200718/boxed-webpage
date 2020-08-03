@@ -1,0 +1,33 @@
+html, body {
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+    font-family: Helvetica;
+}
+
+nav {
+    background-color: #7ACC2D;
+    display: flex;
+    padding: 10px;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    padding-left: 20px;
+    list-style: none;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav li a:hover{
+    color: white;
+}
