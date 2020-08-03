@@ -9,11 +9,16 @@ html, body {
 
 nav {
     align-items: center;
-    background-color: #52cc2d;
+    background-color: #7ACC2D;
     color: white;
     display: flex;
     justify-content: space-between;
     padding: 10px;
+}
+
+.brand_image img {
+    height: 40px;
+    width: 40px;
 }
 
 nav ul {
@@ -27,6 +32,7 @@ nav li {
 
 nav li a {
     color: black;
+    font-weight: 550;
     text-decoration: none;
 }
 
