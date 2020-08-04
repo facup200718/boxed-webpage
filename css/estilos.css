@@ -93,6 +93,7 @@ main h1 {
     background-position: center top;
     background-size: cover;
     display: var(--flex);
+    justify-content: var(--space-between);
     max-height: 50px;
     padding: 20%;
 }
@@ -180,8 +181,8 @@ main h1 {
     display: var(--flex);
     justify-content: var(--space-between);
     margin-bottom: 100px;
-    margin-left: 7.5%;
-    margin-right: 7.5%;
+    margin-left: 7%;
+    margin-right: 7%;
 }
 
 .mention {
