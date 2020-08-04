@@ -77,13 +77,10 @@ nav li a:hover{
 
 /*-------------------------Main section-------------------------*/
 
-main {
+.main_section {
+    font-family: var(--brush);
     padding: 15%;
     text-align: center;
-}
-
-main h1 {
-    font-family: var(--brush);
 }
 
 /*-------------------------Products-------------------------*/
@@ -94,7 +91,7 @@ main h1 {
     background-size: cover;
     display: var(--flex);
     justify-content: var(--space-between);
-    max-height: 50px;
+    height: 50px;
     padding: 20%;
 }
 
@@ -167,14 +164,15 @@ main h1 {
 /*-------------------------Mentions-------------------------*/
 
 .mentions {
-    border-top: rgba(240, 240, 240, 0.726) solid 0.5px;
-    padding-top: 100px;
     text-align: center;
 }
 
-.mentions h1 {
+.titulo {
+    border-top: rgba(240, 240, 240, 0.726) solid 0.5px;
     font-family: var(--brush);
     font-size: 30px;
+    padding-top: 100px;
+    text-align: center;
 }
 
 .mentions_content {

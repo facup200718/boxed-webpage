@@ -1,0 +1,46 @@
+@media (max-width: 600px)  {
+    .products {
+        display: inherit;
+        height: auto;
+    }
+    
+    .product {
+        margin-top: auto;
+    }
+
+    .main_section {
+        padding: 4%;
+    }
+
+    .description {
+        display: inherit;
+    }
+    
+    .characteristic {
+        margin-top: 20%;
+        text-align: center;
+    }
+
+    .characteristic p {
+        text-align: center;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+
+    .mentions_content {
+        display: inherit;
+        
+    }
+
+    .mention {
+        height: 100%;
+        margin-top: 10%;
+        text-align: center;
+        width: 100%;
+    }
+
+    .mention img {
+        height: 100%;
+        width: 100%;
+    }
+}
