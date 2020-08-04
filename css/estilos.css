@@ -1,6 +1,24 @@
+
+@import url('../fonts/Open_Sans/OpenSans-Regular.ttf');
+@import url('../fonts/Open_Sans/OpenSans-Bold.ttf');
+/*-------------------------VARIABLES-------------------------*/
+:root {
+    /*Colores*/
+    --black-color: black;
+    --darker-green-color: #4f851d;
+    --green-color: #7ACC2D;
+    --white-color: white;
+    /*Espaciado*/
+    --space: 10px;
+    /*Tipografia*/
+    --normal: 12px;
+    /*Box shadow*/
+    --box: 0 0 2px rgb(151, 151, 151);
+}
+/*-------------------------DOCUMENT-------------------------*/
 html, body {
-    font-size: 12px;
-    font-family: Helvetica;
+    font-size: var(--normal);
+    font-family: 'Open Sans', sans-serif;
     margin: 0px;
     padding: 0px;
 }
@@ -9,11 +27,11 @@ html, body {
 
 nav {
     align-items: center;
-    background-color: #7ACC2D;
-    color: white;
+    background-color: var(--green-color);
+    color: var(--white-color);
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: var(--space);
 }
 
 .brand_image img {
@@ -31,13 +49,13 @@ nav li {
 }
 
 nav li a {
-    color: black;
+    color: var(--black-color);
     font-weight: 550;
     text-decoration: none;
 }
 
 nav li a:hover{
-    color: white;
+    color: var(--white-color);
 }
 
 /*-------------------------Main section-------------------------*/
@@ -60,12 +78,12 @@ main {
 
 .product { 
     margin-top: -300px;
-    padding: 10px;
+    padding: var(--space);
 }
 
 .product .content{
-    background-color: white;
-    box-shadow: 0 0 2px rgb(151, 151, 151);
+    background-color: var(--white-color);
+    box-shadow: var(--box);
     padding: 15px;
 }
 
@@ -74,16 +92,16 @@ main {
 }
 
 .main_button {
-    background-color: #7ACC2D;
+    background-color: var(--green-color);
     border: 0;
     border-radius: 2px;
-    color: white;
+    color: var(--white-color);
     cursor: pointer;
-    font-size: 12px;
-    padding: 10px;
+    font-size: var(--normal);
+    padding: var(--space);
     width: 100%;
 }
 
 .main_button:hover {
-    background-color: #4f851d;
+    background-color: var(--darker-green-color);
 }
