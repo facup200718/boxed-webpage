@@ -1,4 +1,4 @@
-
+/*-------------------------Fonts-------------------------*/
 @font-face {
     font-family: 'Brush';
     src: url(../fonts/brush-hours/Brush\ Hours\ Font\ by\ 7NTypes.otf) format('truetype');
@@ -7,24 +7,27 @@
     font-family: 'Black Tin Box';
     src: url(../fonts/black-tin-box/BlackTinBox.ttf) format('truetype');
 }
-/*-------------------------VARIABLES-------------------------*/
+/*-------------------------Variables-------------------------*/
 :root {
     /*Colores*/
     --black-color: black;
     --darker-green-color: #4f851d;
+    --gray-color: rgb(151, 151, 151);
     --green-color: #7ACC2D;
     --white-color: white;
     /*Espaciado*/
+    --flex: flex;
     --space: 10px;
+    --space-between: space-between;
     /*Tipografia*/
     --black-tin-box: 'Black Tin Box';
     --brush: 'Brush';
     --bigger: 20px;
     --normal: 12px;
     /*Box shadow*/
-    --box: 0 0 2px rgb(151, 151, 151);
+    --box: 0 0 5px var(--gray-color);
 }
-/*-------------------------DOCUMENT-------------------------*/
+/*-------------------------Document-------------------------*/
 html, body {
     font-size: var(--normal);
     font-family: 'Open Sans', sans-serif;
@@ -32,14 +35,14 @@ html, body {
     padding: 0px;
 }
 
-/*-------------------------NAV-------------------------*/
+/*-------------------------Nav-------------------------*/
 
 nav {
     align-items: center;
     background-color: var(--green-color);
     color: var(--white-color);
-    display: flex;
-    justify-content: space-between;
+    display: var(--flex);
+    justify-content: var(--space-between);
     padding: var(--space);
 }
 
@@ -52,7 +55,7 @@ nav {
 }
 
 nav ul {
-    display: flex;
+    display: var(--flex);
 }
 
 nav li {
@@ -83,13 +86,13 @@ main h1 {
     font-family: var(--brush);
 }
 
-/*-------------------------Productos-------------------------*/
+/*-------------------------Products-------------------------*/
 
 .products {
     background-image: url("../images/curve.png");
     background-position: center top;
     background-size: cover;
-    display: flex;
+    display: var(--flex);
     max-height: 50px;
     padding: 20%;
 }
@@ -132,4 +135,90 @@ main h1 {
 
 .main_button:hover {
     background-color: var(--darker-green-color);
+}
+
+/*-------------------------Description-------------------------*/
+
+.description {
+    display: var(--flex);
+    justify-content: var(--space-between);
+    margin-bottom: 150px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 200px;
+}
+
+.characteristic img {
+    height: 150px;
+    width: auto;
+}
+
+.characteristic h1 {
+    font-family: var(--brush);
+}
+
+.characteristic p {
+    font-family: var(--black-tin-box);
+    font-size: var(--bigger);
+    max-width: 150px;
+}
+
+/*-------------------------Mentions-------------------------*/
+
+.mentions {
+    border-top: rgba(240, 240, 240, 0.726) solid 0.5px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.mentions h1 {
+    font-family: var(--brush);
+    font-size: 30px;
+}
+
+.mentions_content {
+    display: var(--flex);
+    justify-content: var(--space-between);
+    margin-bottom: 100px;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+}
+
+.mention {
+    box-shadow: var(--box);
+    height: 215px;
+    text-align: left;
+    width: 239px;
+}
+
+.mention h1 {
+    font-family: var(--brush);
+    font-size: var(--bigger);
+    margin-top: 0px;
+    padding-left: var(--space);
+}
+
+.mention p {
+    font-family: var(--black-tin-box);
+    font-size: var(--bigger);
+    margin-top: -5px;
+    padding-left: var(--space);
+}
+
+/*-------------------------Footer-------------------------*/
+
+footer {
+    align-items: center;
+    background-color: rgb(36, 36, 36);
+    display: var(--flex);
+    justify-content: var(--space-between);
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+footer h3 {
+    color: var(--white-color);
+    font-family: var(--black-tin-box);
+    font-size: var(--bigger);
+    margin: 10px 0 10px 0;
 }
