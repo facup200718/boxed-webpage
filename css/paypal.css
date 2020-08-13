@@ -1,0 +1,30 @@
+body {
+    background-color: var(--black-color);
+    padding-top: 150px;
+    text-align: center;
+}
+
+img {
+    margin-bottom: -45px;
+}
+
+h1 {
+    -webkit-text-stroke: 1.5px black;
+    color: var(--white-color);
+    font-family: var(--brush);
+    font-size: calc(var(--bigger) * 2);
+}
+
+h3 {
+    color: var(--white-color);
+    font-family: var(--black-tin-box);
+    font-size: calc(var(--bigger) * 1.5);
+    text-decoration: none;
+}
+
+a {
+    color: var(--white-color);
+    font-family: var(--black-tin-box);
+    font-size: var(--bigger);
+    text-decoration: none;
+}

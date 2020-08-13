@@ -10,7 +10,7 @@
 /*-------------------------Variables-------------------------*/
 :root {
     /*Colores*/
-    --black-color: black;
+    --black-color: rgb(31, 31, 31);
     --darker-green-color: #4f851d;
     --gray-color: rgb(151, 151, 151);
     --green-color: #7ACC2D;
@@ -86,7 +86,7 @@ nav li a:hover{
 
 /*-------------------------Products-------------------------*/
 
-.products {
+#products {
     background-image: url("../images/curve.png");
     background-position: center top;
     background-size: cover;
@@ -129,11 +129,21 @@ nav li a:hover{
     font-size: var(--bigger);
     font-family: var(--brush);
     padding: var(--space);
+    text-decoration: none;
     width: 100%;
 }
 
 .main_button:hover {
     background-color: var(--darker-green-color);
+}
+
+.unavailable {
+    background-color: grey;
+}
+
+.unavailable:hover {
+    background-color: grey;
+    cursor: not-allowed;
 }
 
 /*-------------------------Description-------------------------*/
