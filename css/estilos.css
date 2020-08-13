@@ -16,6 +16,7 @@
     --green-color: #7ACC2D;
     --white-color: white;
     /*Espaciado*/
+    --col-width: 8.3333333%;
     --flex: flex;
     --space: 10px;
     --space-between: space-between;
@@ -203,6 +204,8 @@ nav li a:hover{
     margin-top: -5px;
     padding-left: var(--space);
 }
+
+/*-------------------------Modulo pago-------------------------*/
 
 /*-------------------------Footer-------------------------*/
 
