@@ -207,6 +207,17 @@ nav li a:hover{
 
 /*-------------------------Modulo pago-------------------------*/
 
+.modulo_pago {
+    background-color: var(--white-color);
+    box-shadow: var(--box);
+    margin-top: 100px;
+    padding: var(--space);
+}
+
+.modulo_pago_images {
+    text-align: center;
+}
+
 /*-------------------------Footer-------------------------*/
 
 footer {
