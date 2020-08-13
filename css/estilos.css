@@ -218,6 +218,35 @@ nav li a:hover{
     text-align: center;
 }
 
+label {
+    font-family: var(--black-tin-box);
+    font-size: calc(var(--bigger)* 1.25);
+}
+
+form {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+.modulo_pago input {
+    border: 1px solid var(--black-color);
+    border-radius: 2px;
+    box-sizing: border-box;
+    font-family: var(--black-tin-box);
+    font-size: calc(var(--bigger));
+    height: 35px;
+    margin-bottom: var(--space);
+    margin-top: var(--space);
+    width: 100%;
+}
+
+input[type=submit] {
+    border: none;
+    font-family: var(--brush);
+    height: 40px;
+}
+
 /*-------------------------Footer-------------------------*/
 
 footer {

@@ -103,7 +103,6 @@
         display: box;
         display: -moz-box;
         display: -webkit-box;
-        margin-left: 10%;
         margin-right: auto;
         text-align: center;
         -moz-box-orient: vertical;
@@ -111,7 +110,8 @@
     }
 
     [class*="col-"] {
-        width: 90%;
+        box-sizing: border-box;
+        width: 100%;
     }
 
     .blockA {

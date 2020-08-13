@@ -38,7 +38,24 @@
             </div>
             <div class="col-8">
                 <div class="modulo_pago">
-                    Pipo
+                    <form action="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QE5FNA67GSCSG" method="POST">
+                        <label for="first_name">First name</label>
+                        <br>
+                        <input type="text" name="first_name" placeholder="John">
+                        <br>
+                        <label for="last_name">Last name</label>
+                        <br>
+                        <input type="text" name="last_name" placeholder="Doe">
+                        <br>
+                        <label for="night_phone_a">Phone</label>
+                        <br>
+                        <input type="phone" name="night_phone_a" placeholder="610">
+                        <br>
+                        <label for="telephone">E-mail</label>
+                        <br>
+                        <input type="email" name="email" placeholder="jdoe@zyzzyu.com">
+                        <input type="submit" value="CONFIRMAR PAGO" name="submit" class="main_button">
+                    </form>
                 </div>
             </div>
         </div>
