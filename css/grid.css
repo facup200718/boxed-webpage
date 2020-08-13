@@ -1,0 +1,103 @@
+/*container > row > column*/
+:root {
+    --col-width: 8.3333333%;
+}
+
+.container {
+    margin: auto;
+    padding-bottom: calc(var(--space) * 10);
+    max-width: 900px;
+}
+
+.container h1 {
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.container h1, [class*="col-"] h2 {
+    font-family: var(--brush);
+}
+
+.row {
+    display: flex;
+    margin-bottom: calc(var(--space) * 10);
+}
+
+.col-1 {
+    width: var(--col-width);
+}
+
+.col-2 {
+    width: calc(var(--col-width)*2);
+}
+
+.col-3 {
+    width: calc(var(--col-width)*3);
+}
+
+.col-4 {
+    width: calc(var(--col-width)*4);
+}
+
+.col-5 {
+    width: calc(var(--col-width)*5);
+}
+
+.col-6 {
+    width: calc(var(--col-width)*6);
+}
+
+.col-7 {
+    width: calc(var(--col-width)*7);
+}
+
+.col-8 {
+    width: calc(var(--col-width)*8);
+}
+
+.col-9 {
+    width: calc(var(--col-width)*9);
+}
+
+.col-10 {
+    width: calc(var(--col-width)*10);
+}
+
+.col-11 {
+    width: calc(var(--col-width)*11);
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/*[class*="col-"] es para elegir todas las clases que comiencen con "col-"*/
+
+[class*="col-"] {
+    padding: var(--space);
+} 
+
+[class*="col-"] img {
+    height: 175px;
+    width: auto;
+}
+
+[class*="col-"] p {
+    font-family: var(--black-tin-box);
+    font-size: calc(var(--normal) * 1.5);
+}
+
+@media (max-width: 900px) {
+    .row {
+        display: inherit;
+    }
+
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+.col-8 {
+    
+    padding-top: calc(var(--space) * 5);
+}
