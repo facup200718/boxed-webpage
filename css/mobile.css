@@ -1,4 +1,4 @@
-@media (max-width: 900px)  {
+@media (max-width: 600px)  {
     .products {
         display: inherit;
         height: auto;
@@ -33,7 +33,7 @@
     }
 
     .mention {
-        height: 100%w;
+        height: 100%;
         margin-top: 10%;
         text-align: center;
         width: 100%;
